@@ -9,22 +9,22 @@ const Partners = () => {
   return (
     <section className='partners'>
       <section className="brand-section">
-        <div className="container">
+        <div className="center-text">
           <h3>
             Trusted by 1000+ companies
           </h3>
           <div className="brand-section-slider">
-            <div className="slide">
-              <img src={allenSolly} alt="Allen Solly" />
+            <div>
+              <img className="slide" src={allenSolly} alt="Allen Solly" />
             </div>
-            <div className="slide">
-              <img src={levis} alt="Levis" />
+            <div>
+              <img className="slide" src={levis} alt="Levis" />
             </div>
-            <div className="slide">
-              <img src={baggit} alt="Baggit" />
+            <div>
+              <img className="slide" src={baggit} alt="Baggit" />
             </div>
-            <div className="slide">
-              <img src={calvinKlein} alt="Calvin Klein" />
+            <div>
+              <img className="slide" src={calvinKlein} alt="Calvin Klein" />
             </div>
           </div>
         </div>

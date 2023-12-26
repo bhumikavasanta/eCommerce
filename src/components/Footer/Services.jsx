@@ -8,7 +8,7 @@ import { RiSecurePaymentLine } from 'react-icons/ri';
 const Services = () => {
   return (
     <section className='services'>
-        <div className="container">
+        <div className="center-text">
           <div className="grid grid-three-column">
             <div className="services-1">
               <div>

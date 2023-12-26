@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
       </section>
       <footer>
-        <div className="container grid grid-four-column">
+        <div className="footer-container grid grid-four-column">
             <div className="footer-about">
                 <h3>
                     Myntra Tech
@@ -71,7 +71,7 @@ const Footer = () => {
 
           <div className="footer-bottom--section">
             <hr />
-            <div className="container">
+            <div className="center-text">
               <p>
                 @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
               </p>
