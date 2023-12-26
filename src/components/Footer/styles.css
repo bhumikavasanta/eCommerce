@@ -1,56 +1,205 @@
 .services {
-    padding: 9rem 0;
+  /* padding: 9rem 0; */
+  background: #778DA9;
+  border: 4px solid #1B263B;
+  border-radius: 2rem;
+  padding-bottom: 6rem;
 }
+
 .grid {
-    gap: 4.8rem;
-  }
-  .services-1,
-  .services-2,
-  .services-3 {
-    width: auto;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    /* background: ${({ theme }) => theme.colors.bg}; */
+  gap: 4.8rem;
+}
+
+.services-1,
+.services-2,
+.services-3 {
+  width: auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* background: ${({ theme }) => theme.colors.bg}; */
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.services-2 {
+  gap: 4rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.services-colum-2 {
+  /* background: ${({ theme }) => theme.colors.bg}; */
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.services-colum-2 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h3 {
+  margin-top: 1.4rem;
+  font-size: 2rem;
+}
+
+.icon {
+  /* font-size: rem; */
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #5138ee;
+}
+
+.partners {
+  /* padding: 9rem 0; */
+  background: #778DA9;
+  margin-top: 1rem;
+  border: 4px solid #1B263B;
+  border-radius: 2rem;
+}
+
+.brand-section {
+  /* padding: 12rem 0 0 0; */
+}
+
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+  /* color: ${({ theme }) => theme.colors.text}; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+img {
+  min-width: 10rem;
+  height: 10rem;
+}
+
+.brand-section-slider {
+  padding: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .brand-section-slider {
+    padding: 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: red; */
     text-align: center;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   }
-  .services-2 {
-    gap: 4rem;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  .services-colum-2 {
-    /* background: ${({ theme }) => theme.colors.bg}; */
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  }
-  .services-colum-2 div {
-    display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-  }
-  h3 {
-    margin-top: 1.4rem;
-    font-size: 2rem;
+}
+
+/* .iSIFGq {
+  margin: 0;
+} */
+
+.contact-short {
+  max-width: 60vw;
+  margin: auto;
+  padding: 5rem 10rem;
+  border-radius: 1rem;
+  transform: translateY(50%);
+  background: #778DA9;
+}
+.contact-short h3 {
+  color: #1B263B;
+}
+
+.contact-short .grid div:last-child {
+  justify-self: end;
+  align-self: center;
+}
+
+/* Media Query for Contact Section on smaller screens */
+@media (max-width: 768px) {
+  .contact-short {
+    max-width: 80vw;
+    margin: 4.8rem auto;
+    transform: translateY(0%);
+    text-align: center;
   }
 
-  .icon {
-    /* font-size: rem; */
-    width: 8rem;
-    height: 8rem;
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #5138ee;
+  .contact-short .grid div:last-child {
+    justify-self: center;
   }
+}
+footer {
+  padding: 6rem 0 9rem 0;
+  background: #1B263B;
+}
+
+footer h3 {
+  margin-bottom: 2.4rem;
+  color: #E0E1DD;
+}
+footer p {
+  /* margin-bottom: 2.4rem; */
+  color: #E0E1DD;
+}
+
+footer .footer-social--icons {
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+footer .footer-social--icons div {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.icons {
+  font-size: 3.4rem;
+  position: relative;
+  cursor: pointer;
+  /* color: white; */
+  background: #E0E1DD;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.footer-bottom--section {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.footer-bottom--section hr {
+  margin-bottom: 2rem;
+  height: 0.1px;
+}
+.footer-subscribe {
+  text-align: center;
+}
+.footer-about p {
+  text-align: center;
+}
+
+/* Media Query for Footer on smaller screens */
+@media (max-width: 768px) {
+  footer {
+    padding: 9rem 0 9rem 0;
+  }
+
+  .footer-bottom--section {
+    padding-top: 4.8rem;
+  }
+}

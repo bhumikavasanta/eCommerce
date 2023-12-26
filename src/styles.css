@@ -1,4 +1,5 @@
 * {
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,13 +72,20 @@ h3 {
   font-weight: 400;
 }
 
-p,
-button {
+p {
   color: blue;
   font-size: 1.65rem;
   line-height: 1.5;
   font-weight: 400;
 }
+
+/* button {
+  color: #E0E1DD;
+  font-size: 1.65rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background: #0D1B2A;
+} */
 
 a {
   text-decoration: none;
@@ -153,12 +161,13 @@ textarea {
 input[type="submit"] {
   max-width: 16rem;
   margin-top: 2rem;
-  background-color: yellow;
-  color: black;
+  background-color: #1B263B;
+  color: #E0E1DD;
   padding: 1.4rem 2.2rem;
   border-style: solid;
   border-width: .1rem;
-  text-transform: uppercase;
+  border-radius: 1.5rem;
+  /* text-transform: uppercase; */
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -188,17 +197,18 @@ input[type="submit"] {
 button {
   text-decoration: none;
   max-width: auto;
-  background-color: rgb(98 84 243);
-  color: rgb(255 255 255);
+  background-color: #1B263B;
+  color: #E0E1DD;
   padding: 1.4rem 2.4rem;
   border: none;
+  border-radius: 1.5rem;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
+  /* -webkit-transition: all 0.3s ease 0s; */
+  /* -moz-transition: all 0.3s ease 0s; */
+  /* -o-transition: all 0.3s ease 0s; */
 
   &:hover,
   &:active {

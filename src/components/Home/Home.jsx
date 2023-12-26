@@ -3,6 +3,7 @@ import './styles.css';
 import HeroSection from '../HeroSection/HeroSection';
 import Services from '../Footer/Services';
 import Partners from '../Footer/Partners';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <Services />
       <Partners />
+      <Footer />
     </section>
   )
 }
