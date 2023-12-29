@@ -40,6 +40,8 @@
 p {
     font-size: 1.4rem;
     padding-top: 0.4rem;
+    color: #0D1B2A;
+    text-transform: capitalize;
 }
 
 .product-data-price {
@@ -73,6 +75,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: #E0E1DD; */
 }
 
 .page_loading {
@@ -135,3 +138,90 @@ hr {
       grid-template-columns: repeat(4, 1fr);
     }
   } */
+  .box-image--style {
+    border: 2px solid #0D1B2A;
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 18rem;
+    padding: 2rem;
+  }
+  .mainImage {
+    border: 2px solid #0D1B2A;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 40rem;
+    padding: 2rem;
+  }
+  .product-data h2 {
+    font-size: xxx-large;
+    color: #0D1B2A;
+  }
+  .icon-style {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    .icon {
+      font-size: 2rem;
+      color: orange;
+    }
+
+    .empty-icon {
+      font-size: 2.6rem;
+    }
+    p {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+  }
+  .colors p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .btnStyle {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .checkStyle {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  /* we can use it as a global one too  */
+  .amount-toggle {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+
+    button {
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .amount-style {
+      font-size: 2.4rem;
+      /* color: ${({ theme }) => theme.colors.btn}; */
+    }
+  }

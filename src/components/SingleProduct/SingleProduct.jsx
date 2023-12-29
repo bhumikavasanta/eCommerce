@@ -6,7 +6,8 @@ import PageNavigation from "../Header/PageNavigation";
 import Images from "./Images";
 import { TbTruckDelivery, TbReplace } from 'react-icons/tb';
 import { MdSecurity } from 'react-icons/md';
-
+import Stars from "./Stars";
+import AddToCart from "./AddToCart";
 
 const API = "https://fakestoreapi.com/products";
 
@@ -39,7 +40,7 @@ const SingleProduct = () => {
         ) : (
           <section>
             <PageNavigation title={title}/>
-            <div className="contaainer">
+            <div className="container">
               <div className="grid grid-two-column">
                 <div className="product_images">
                   <Images image={image} />
@@ -48,12 +49,7 @@ const SingleProduct = () => {
                   <h2>
                     {title}
                   </h2>
-                  <p>
-                    {rating?.rate}
-                  </p>
-                  <p>
-                    {rating?.count} reviews
-                  </p>
+                  <Stars stars={rating?.rate} reviews={rating?.count} />
                   <p className="product-data-price product-data-real-price">
                     $ {price}
                   </p>
@@ -78,6 +74,8 @@ const SingleProduct = () => {
                       <p>1 Year Warranty</p>
                     </div>
                   </div>
+                  {/* <hr /> */}
+                  <AddToCart product={singleProduct} />
                 </div>
               </div>
             </div>

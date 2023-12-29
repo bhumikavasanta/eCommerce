@@ -13,15 +13,15 @@ const Images = (props) => {
         {
             images.map((currentElement, index) => {
                 return (
-                    <figure>
+                    // <figure>
                         <img src={currentElement} alt="Product" className='box-image--style' key={index} onClick={() => setMainImg(currentElement)}/>
-                    </figure>
+                    // </figure>
                 );
             })
         }
       </div>
       <div className="main-screen">
-        <img src={mainImg} alt="Product" />
+        <img src={mainImg} alt="Product" className='mainImage'/>
       </div>
     </section>
   )

@@ -7,7 +7,7 @@ const PageNavigation = (props) => {
     const { title } = props;
 
   return (
-    <section>
+    <section className='pageNav'>
       <NavLink to='/'>
         Home
       </NavLink>

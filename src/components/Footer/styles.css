@@ -230,3 +230,9 @@ footer .footer-social--icons div {
     padding-top: 4.8rem;
   }
 }
+.footer-outer {
+  width: 100%;
+}
+.grid-column {
+  grid-template-columns: repeat(4, 1fr);
+}

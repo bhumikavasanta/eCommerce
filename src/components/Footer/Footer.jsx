@@ -5,7 +5,7 @@ import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section><section>
+    <section className='footer-outer'><section>
           <div className="contact-short">
               <div className="grid grid-two-column">
                   <div>
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
       </section>
       <footer>
-        <div className="footer-container grid grid-four-column">
+        <div className="footer-container grid grid-column">
             <div className="footer-about">
                 <h3>
                     Myntra Tech
