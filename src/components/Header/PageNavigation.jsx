@@ -11,7 +11,9 @@ const PageNavigation = (props) => {
       <NavLink to='/'>
         Home
       </NavLink>
+      &nbsp;
       /
+      &nbsp;
       {title}
     </section>
   )

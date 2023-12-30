@@ -40,8 +40,8 @@ const SingleProduct = () => {
         ) : (
           <section>
             <PageNavigation title={title}/>
-            <div className="container">
-              <div className="grid grid-two-column">
+            <div className="container-single-product">
+              <div className="grid grid-two-column single-product">
                 <div className="product_images">
                   <Images image={image} />
                 </div>
