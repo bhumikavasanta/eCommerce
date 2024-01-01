@@ -7,7 +7,7 @@ const ProductList = () => {
 
   const { filter_products, grid_view } = useFilterContext();
   useEffect(() => {
-    console.log(filter_products);
+    // console.log(filter_products);
   }, [filter_products]);
 
   if(grid_view === true) {
