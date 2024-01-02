@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './styles.css';
 import CartAmountToggle from './CartAmountToggle';
 import { NavLink } from 'react-router-dom';
-import { useCartContext } from '../../context/CartContext';
+import { useCartContext } from '../context/CartContext';
 
 const AddToCart = ({product}) => {
 

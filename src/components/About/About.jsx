@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from '../HeroSection/HeroSection';
-import { useProductContext } from '../../context/ProductContext';
+import { useProductContext } from '../context/ProductContext';
 import Footer from '../Footer/Footer';
 
 const About = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import CartAmountToggle from '../SingleProduct/CartAmountToggle';
 import { FaTrash } from 'react-icons/fa';
-import { useCartContext } from '../../context/CartContext';
+import { useCartContext } from '../context/CartContext';
 
 const CartItem = (props) => {
 

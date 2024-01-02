@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { useFilterContext } from '../../context/FilterContext';
+import { useFilterContext } from '../context/FilterContext';
 // import { FaCheck } from 'react-icons/fa';
 
 const FilterSection = () => {

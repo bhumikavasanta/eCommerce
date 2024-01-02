@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsFillGridFill, BsList } from 'react-icons/bs';
-import { useFilterContext } from '../../context/FilterContext';
+import { useFilterContext } from '../context/FilterContext';
 
 const Sort = () => {
 

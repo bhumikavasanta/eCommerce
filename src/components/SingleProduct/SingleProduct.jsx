@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useProductContext } from "../../context/ProductContext";
+import { useProductContext } from "../context/ProductContext";
 import './styles.css';
 import PageNavigation from "../Header/PageNavigation";
 import Images from "./Images";

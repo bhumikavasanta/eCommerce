@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useProductContext } from '../../context/ProductContext';
+import { useProductContext } from '../context/ProductContext';
 import Product from './Product';
 import './styles.css';
 
@@ -7,7 +7,6 @@ const FeatureProducts = () => {
 
     const { isLoading, featureProducts } = useProductContext();
     useEffect(() => {
-      console.log(featureProducts);
     }, [featureProducts]);
     if (isLoading) {
       return <div> ......Loading </div>;
