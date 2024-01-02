@@ -7,14 +7,7 @@ import { useCartContext } from '../../context/CartContext';
 const CartItem = (props) => {
 
     const { id, name, image, price, amount } = props;
-    const { removeItem } = useCartContext();
-
-    const setIncrease = () => {
-        // setAmount(amount+1);
-    };
-    const setDecrease = () => {
-        // amount > 1 ? setAmount(amount-1) : setAmount(1);
-    };
+    const { removeItem, setIncrease, setDecrease } = useCartContext();
 
   return (
     <div className='cart_heading grid grid-five-column'>
@@ -36,8 +29,8 @@ const CartItem = (props) => {
         </div>
         <CartAmountToggle
             amount = {amount}
-            setIncrease = {setIncrease}
-            setDecrease = {setDecrease}
+            setIncrease = {() => setIncrease(id)}
+            setDecrease = {() => setDecrease(id)}
         />
         <div className="cart-hide">
             <p>
